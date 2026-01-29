@@ -218,7 +218,6 @@ export const assessmentCellRenderer = (
               <EvaluationsReviewAssessmentTag
                 key={`tag_${uniqueValueCount.latestAssessment.name}_${uniqueValueCount.value}`}
                 showRationaleInTooltip
-                disableJudgeTypeIcon
                 hideAssessmentName
                 assessment={assessment}
                 isRootCauseAssessment={currentIsAssessmentRootCause}
@@ -233,7 +232,6 @@ export const assessmentCellRenderer = (
         <EvaluationsReviewAssessmentTag
           key={`tag_${assessmentName}_${comparisonEntry.currentRunValue?.evaluationId}`}
           showRationaleInTooltip
-          disableJudgeTypeIcon
           hideAssessmentName
           isRootCauseAssessment={currentIsAssessmentRootCause}
           assessmentInfo={assessmentInfo}
