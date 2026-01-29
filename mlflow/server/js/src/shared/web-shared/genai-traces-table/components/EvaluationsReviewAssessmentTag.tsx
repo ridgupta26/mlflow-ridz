@@ -543,7 +543,7 @@ const EvaluationsReviewTag = ({
             paddingTop: 2,
             paddingBottom: 2,
             backgroundColor: hasBeenEditedByHuman 
-              ? theme.colors.backgroundValidationInfo
+              ? theme.isDarkMode ? theme.colors.blue800 : theme.colors.blue200
               : 'transparent',
             borderRadius: theme.general.borderRadiusBase,
             color: iconColor,
