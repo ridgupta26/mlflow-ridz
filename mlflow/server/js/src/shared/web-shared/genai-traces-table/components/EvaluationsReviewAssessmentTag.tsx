@@ -542,7 +542,9 @@ const EvaluationsReviewTag = ({
             paddingRight: theme.spacing.xs,
             paddingTop: 2,
             paddingBottom: 2,
-            backgroundColor: hasBeenEditedByHuman ? theme.colors.blue100 : theme.colors.purple100,
+            backgroundColor: hasBeenEditedByHuman 
+              ? getEvaluationResultAssessmentBackgroundColor(theme, assessmentInfo, assessment)
+              : 'transparent',
             borderRadius: theme.general.borderRadiusBase,
             color: iconColor,
             svg: { width: 12, height: 12 },
