@@ -543,7 +543,7 @@ const EvaluationsReviewTag = ({
             paddingTop: 2,
             paddingBottom: 2,
             backgroundColor: hasBeenEditedByHuman 
-              ? getEvaluationResultAssessmentBackgroundColor(theme, assessmentInfo, assessment)
+              ? theme.colors.backgroundValidationInfo
               : 'transparent',
             borderRadius: theme.general.borderRadiusBase,
             color: iconColor,
