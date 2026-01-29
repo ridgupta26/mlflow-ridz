@@ -240,6 +240,7 @@ export const SessionHeaderCell: React.FC<SessionHeaderCellProps> = ({ column, se
             <EvaluationsReviewAssessmentTag
               key={`tag_${uniqueValueCount.latestAssessment.name}_${uniqueValueCount.value}`}
               showRationaleInTooltip
+              disableJudgeTypeIcon
               hideAssessmentName
               assessment={assessment}
               isRootCauseAssessment={false}

@@ -535,7 +535,17 @@ const EvaluationsReviewTag = ({
       {disableSourceTypeIcon !== true ? (
         <span
           css={{
+            display: 'inline-flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            paddingLeft: theme.spacing.xs,
+            paddingRight: theme.spacing.xs,
+            paddingTop: 2,
+            paddingBottom: 2,
+            backgroundColor: hasBeenEditedByHuman ? theme.colors.blue100 : theme.colors.purple100,
+            borderRadius: theme.general.borderRadiusBase,
             color: iconColor,
+            svg: { width: 12, height: 12 },
           }}
         >
           {sourceIcon}
